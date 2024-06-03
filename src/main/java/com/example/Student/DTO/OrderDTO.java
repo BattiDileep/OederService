@@ -16,5 +16,4 @@ public class OrderDTO {
 	private String orderQuntity;
 	private String deliveryLocation;
 	
-
 }

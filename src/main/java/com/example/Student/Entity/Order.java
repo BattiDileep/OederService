@@ -17,11 +17,11 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Data
 @Table
 public class Order {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="ORDER_ID")
 	private Long orderId;
 	@Column(name="ORDER_NAME")
 	private String orderName;
@@ -29,5 +29,6 @@ public class Order {
 	private String orderQuntity;
 	@Column(name="ORDER_LOCATION")
 	private String deliveryLocation;
+	
 
 }
